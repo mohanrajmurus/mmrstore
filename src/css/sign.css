@@ -1,0 +1,43 @@
+
+.sub-menu{
+    display: none;
+}
+.active{
+    background: white;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    
+}
+li{
+    color: black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.active li button{
+    background: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.profile__menu{
+    position: relative;
+    z-index: 1;
+}
+.profile__menu li img{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    object-fit: contain;
+    mix-blend-mode: normal;
+    cursor: pointer;
+}
+@media (max-width:768px) {
+    .active{
+        position: static;
+        display: none;
+    }
+}

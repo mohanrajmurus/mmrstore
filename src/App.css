@@ -1,0 +1,12 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  color: var(--text);
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+    
+  }
+}

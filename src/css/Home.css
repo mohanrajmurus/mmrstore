@@ -1,0 +1,28 @@
+.home__container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+   
+}
+p{
+    color: white;
+}
+.filter__product__container{
+    width: 30%;
+}
+.filter__product__container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.filter__product__container button{
+    margin: 0;
+    width: fit-content;
+}
+
+@media(max-width:768px){
+    .filter__product__container{
+        display: none;
+    }
+}

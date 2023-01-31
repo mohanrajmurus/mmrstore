@@ -1,0 +1,132 @@
+.product__container{
+    margin-top: 30px;
+}
+.product__card__container{
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 30%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+img{
+    width:100%;
+    height: 25vh;
+    object-fit: cover;
+    mix-blend-mode: multiply
+}
+.card h1{
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 0 10px;
+}
+.card__detail{
+    display: flex;
+    justify-content: center;
+}
+.card__detail__price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 10px;
+}
+.card h3{
+    color: black;
+    font-size: 0.9rem;
+}
+.card p{
+    color: gray;
+    font-weight: 100;
+}
+.card button{
+    font-size: 0.8rem;
+    background: var(--button);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.card .remove__cart{
+    background-color: red;
+    transition: none;
+}
+/* pagination */
+
+.pagination {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination > span {
+    padding: 15px 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  
+  .pagination__disable {
+    opacity: 0;
+  }
+  
+  .pagination__selected {
+    background-color: white;
+    color: black;
+  }
+  
+@media(max-width:768px){
+    .product__card__container{
+        justify-content: center;
+    }
+    .card{
+        width: 45%;
+        
+    }
+    .card__detail{
+        flex-direction: column;
+    }
+    .card button{
+        padding: 5px;
+    }
+    .pagination{
+        padding: 0;
+        justify-content: center;
+    }
+    .pagination > span{
+        padding: 10px;
+    }
+}
+@media(max-width:568px){
+    .product__card__container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        
+    }
+   
+    .pagination > span{
+        padding: 2px;
+    }
+}

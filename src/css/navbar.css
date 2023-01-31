@@ -1,0 +1,138 @@
+nav {
+  background-color: var(--background);
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.mobile__menu {
+    display: none;
+  }
+  .nav__logo {
+    width: 20%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .nav__logo img {
+    width: 100px;
+    height: 8vh;
+    object-fit: cover;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+  }
+  .logo__mobile{
+    display: none;
+    color: var(--text);
+  }
+  .nav__user {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  button {
+    font-size: 1rem;
+    background: var(--button);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .signin {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .search__bar{
+    margin: 0 10px;
+  }
+  .search__bar input{
+    width: 100%;
+    outline: none;
+    background: inherit;
+    color: white;
+    border: none;
+
+  }
+  .search__bar input:focus{
+    border: 1px solid white;
+    padding: 10px;
+  }
+  @media (max-width: 768px) {
+    nav{
+      height: 15vh;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    .nav__logo{
+      margin: 0;
+      padding: 0;
+    }
+    .logo__mobile{
+      display: block;
+    }
+    .logo__img{
+     display: none;
+    } 
+    .mobile__menu {
+      display: block;
+      /* background-color: black;
+      width: 80%;
+      height: 100vh; */
+    }
+    .nav__user{
+      justify-content: center;
+    }
+    .nav__auth {
+      position: absolute;
+      left: -200px;
+      top: 12vh;
+      z-index: 1;
+    }
+    .nav__auth__mobile {
+      left: -20px;
+      top: 10vh;
+      height: 100vh;
+      width: 70%;
+      background-color: var(--background);
+      padding: 20px;
+      transform: all 1s;
+    }
+    .sub-menu{
+      display: block;
+    }
+    .nav__auth__mobile  ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .profile__menu li{
+      color: white;
+      padding: 10px 0;
+    }
+    .profile__menu li img{
+      width: 50px;
+      height: 50px;
+    }
+    .nav__auth button {
+      width: 90%;
+      margin: 0;
+    }
+    .search__bar {
+      position: absolute;
+      top: 9vh;
+      left: 12%;
+    }
+  }
